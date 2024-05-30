@@ -1,0 +1,42 @@
+summary: ''
+description: ''
+lock: '!inline f/vat_gift_cards/nifty_script.script.lock'
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    name:
+      type: string
+      description: ''
+      default: Nicolas Bourbaki
+    age:
+      type: integer
+      description: ''
+      default: 42
+    file_:
+      type: string
+      description: ''
+      contentEncoding: base64
+      default: <function call>
+    l:
+      type: array
+      description: ''
+      default:
+        - or
+        - lists!
+      items:
+        type: string
+        enum: null
+    no_default:
+      type: string
+      description: ''
+      default: null
+    obj:
+      type: object
+      description: ''
+      default:
+        even: dicts
+      properties: {}
+  required:
+    - no_default
