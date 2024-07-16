@@ -1,0 +1,9 @@
+summary: Warehouse DB Query Selection Total
+description: ''
+lock: '!inline f/vat_gift_cards/warehouse_db_query_selection_total.script.lock'
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties: {}
+  required: []
