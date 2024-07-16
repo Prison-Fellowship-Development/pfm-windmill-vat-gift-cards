@@ -1,0 +1,9 @@
+summary: Caregiver to Child Duplicate Checker
+description: ''
+lock: '!inline f/warehouse_db/cg_to_chd_duplicate_checker.script.lock'
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties: {}
+  required: []
