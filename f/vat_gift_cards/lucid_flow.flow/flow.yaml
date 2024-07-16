@@ -1,0 +1,36 @@
+summary: Warehouse DB Extraction
+description: ''
+value:
+  modules:
+    - id: a
+      summary: Warehouse DB Query Materialize
+      value:
+        type: script
+        input_transforms: {}
+        path: u/joshua_chuang/warehouse_db_query_mat
+    - id: b
+      summary: Warehouse DB Query Join Total
+      value:
+        type: script
+        input_transforms: {}
+        path: u/joshua_chuang/warehouse_db_query_join_total
+    - id: c
+      summary: Warehouse DB Query Selection Total
+      value:
+        type: script
+        input_transforms: {}
+        path: u/joshua_chuang/warehouse_db_query_selection_total
+    - id: e
+      summary: Warehouse DB Query Selection Normalized
+      value:
+        type: script
+        input_transforms: {}
+        path: u/joshua_chuang/warehouse_db_query_selection_normalized
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  order: []
+  properties: {}
+  required: []
+visible_to_runner_only: false
+ws_error_handler_muted: false
