@@ -1,0 +1,33 @@
+summary: PCA Data Injection
+description: ''
+value:
+  modules:
+    - id: a
+      summary: PCA Input Data Materialization
+      value:
+        type: script
+        input_transforms: {}
+        path: u/joshua_chuang/pca_input_data_materialization
+    - id: b
+      summary: PCA DW Materialization
+      value:
+        type: script
+        input_transforms: {}
+        path: u/joshua_chuang/pca_dw_materialization
+    - id: c
+      summary: PCA Data Join
+      value:
+        type: script
+        input_transforms: {}
+        path: u/joshua_chuang/pca_data_join
+    - id: d
+      summary: PCA Selection Melt
+      value:
+        type: script
+        input_transforms: {}
+        path: u/joshua_chuang/pca_selection_melt
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties: {}
+  required: []
