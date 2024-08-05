@@ -129,7 +129,7 @@ value:
           runnable:
             type: runnableByPath
             name: PCA Data Injection
-            path: u/joshua_chuang/pca_data_injection_flow
+            path: f/pca/pca_data_injection_flow
             runType: flow
             schema:
               $schema: 'https://json-schema.org/draft/2020-12/schema'
@@ -323,7 +323,7 @@ value:
 policy:
   execution_mode: publisher
   triggerables_v2:
-    'e:flow/u/joshua_chuang/pca_data_injection_flow':
+    'e:flow/f/pca/pca_data_injection_flow':
       allow_user_resources: []
       one_of_inputs: {}
       static_inputs: {}
