@@ -1,6 +1,7 @@
 summary: null
 display_name: pca
 extra_perms:
+  u/david_fulton: false
   u/joshua_chuang: true
 owners:
   - u/joshua_chuang
