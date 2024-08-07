@@ -52,6 +52,9 @@ def main():
     # drop rows with missing responses
     pca_df = pca_df.dropna(subset=['response'])
 
+    # print("survey_id counts:")
+    # print(pca_df['survey_id'].count())
+
     # save the final dataframe to s3
     s3_path = f"s3://{bucket}/pca/pca_final.parquet"
     wr.s3.to_parquet(df=pca_df, path=s3_path, dataset=False, boto3_session=s3)
