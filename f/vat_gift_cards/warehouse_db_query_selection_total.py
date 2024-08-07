@@ -43,7 +43,8 @@ def main():
                         "caregiver_phone", 
                         "child_first_name", 
                         "child_last_name", 
-                        "message_to_child"]).collect()
+                        "message_to_child",
+                        "parent_nickname"]).collect()
     
     join_s3_path = f"s3://{bucket}/warehouse_db_query_mat/warehouse_db_final.parquet"
     wr.s3.to_parquet(df=df_final.to_pandas(), path=join_s3_path, dataset=False, boto3_session=s3)
