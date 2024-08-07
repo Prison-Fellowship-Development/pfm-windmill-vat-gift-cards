@@ -52,7 +52,8 @@ def main():
                 #join with inm on inmateid
                 #join with crg on caregiverid
     inmappchdj_query = '''SELECT inmappchdj.applicationid::INTEGER, inmappchdj.childid::INTEGER,
-                    inmappchdj.message AS message_to_child
+                    inmappchdj.message AS message_to_child,
+                    inmappchdj.parentnickname AS parent_nickname
                 FROM r_ab.tblinmateappchildjoin AS inmappchdj
                 WHERE inmappchdj.childstatusid = 1'''
                 #orgprgchdj ...
