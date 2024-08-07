@@ -160,6 +160,7 @@ def main():
                 "inmate_first_name",
                 "inmate_last_name",
                 "message_to_child",
+                "parent_nickname",
                 "program_year",
             ]
         )
